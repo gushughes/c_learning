@@ -1,0 +1,107 @@
+C Systems Mental Model — Master Diagram
+
+This diagram connects execution flow, abstraction layers, data structures,
+pointers, memory, and hardware into a unified view of C systems.
+
+--------------------------------------------------
+
+EXECUTION FLOW
+sense → decide → act → repeat
+
+Programs execute through time, while their data lives in deeper layers.
+
+--------------------------------------------------
+
+ABSTRACTION STACK
+
+HIGHER ABSTRACTION
+
+Machine Behaviour
+(conveyor logic, CAN handling)
+↓
+Program Logic
+(loops, functions, conditions)
+↓
+Data Structures
+
+Variable = box
++------+ 
+| 42   |
++------+
+
+Struct = toolbox
++------------------+
+| id     | 10      |
+| pos    | 4       |
+| weight | 12      |
++------------------+
+
+Array = row of boxes
++----+----+----+----+
+|10  |20  |30  |40  |
++----+----+----+----+
+
+↓
+Pointers (References)
+
+Pointer = envelope holding an address
+
+Envelope P
++-----------+
+| addr X    |
++-----------+
+
+↓ (dereference = open envelope)
+
+Box X
++------+
+| 42   |
++------+
+
+↓
+Memory Layout
+
+Address        Value
+0x1000   →     42
+0x1004   →     0x1000
+
+↓
+Hardware
+
+CPU  
+RAM  
+Peripherals  
+CAN Controller  
+
+LOWER ABSTRACTION
+
+--------------------------------------------------
+
+CORE MODELS
+
+variable → box  
+array    → storage (row of boxes)  
+struct   → grouped data (toolbox)  
+pointer  → reference (envelope holding address)  
+
+Key idea:
+array = storage  
+pointer = reference  
+
+--------------------------------------------------
+
+DEBUGGING PATH
+
+behaviour problem  
+↓  
+logic problem  
+↓  
+data structure problem  
+↓  
+pointer mistake  
+↓  
+memory corruption  
+↓  
+hardware interaction  
+
+--------------------------------------------------
