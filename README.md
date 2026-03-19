@@ -144,3 +144,10 @@ This project demonstrates a structured approach to embedded control using:
 * Event-driven design
 
 It serves as a foundation for more advanced embedded and industrial control systems.
+
+## Coming Soon
+
+* State machine design notes  
+* CAN communication basics  
+* Pointers and memory understanding  
+* Embedded system debugging  
