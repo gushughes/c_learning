@@ -1,34 +1,17 @@
-# \# C Learning
+# C Learning
 
-# 
+A learning log for foundational C, embedded systems, CAN communication, and system-level design.
 
-# A learning log for foundational C, embedded systems, CAN communication, and system-level design.
+---
 
-# 
+## State Machine Notes
 
-# \---
+State machine design notes.
 
-# 
+---
 
-# \## State Machine Notes
+## Topics
 
-# 
-
-# State machine design notes.
-
-# 
-
-# \---
-
-# 
-
-# \## Topics
-
-# 
-
-# \- CAN communication basics  
-
-# \- Pointers and memory understanding  
-
-# \- Embedded system debugging  
-
+- CAN communication basics  
+- Pointers and memory understanding  
+- Embedded system debugging  
